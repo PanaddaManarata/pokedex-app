@@ -1,5 +1,11 @@
-*{
-    background-color: rgb(223, 252, 223); 
+*{margin: 0 auto; }
+
+#pokedex{
+    margin-top: 5%; 
+    width: 650px;
+    height: 550px; 
+    background-color: rgb(241, 185, 185); 
+    border-radius: 5%; 
 }
 
 #nmbr{
@@ -22,3 +28,8 @@
     background-color: red; 
 }
 
+#whatPokemon{
+    width: 150px; 
+    height: 150px; 
+    background-image: cover; 
+}

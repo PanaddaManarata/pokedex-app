@@ -1,18 +1,29 @@
 const input = document.getElementById('search'); 
 const btn = document.getElementById('btn')
 
+input.addEventListener('keyup',  function(){
+  if (event.key === "Enter") {
+       getyourpokemon();  
+      console.log("key")
+  }
+})
+
+
+
 btn.addEventListener('click', getyourpokemon); 
 
 async function getyourpokemon(e){
 
 let inputValue = input.value; 
 let api = `https://pokeapi.co/api/v2/pokemon/${inputValue}/`;
-let evapi = `https://pokeapi.co/api/api/v2/evolution-chain/${inputValue}/`;
+//let evapi = `http://pokeapi.co/api/v2/evolution-chain/${inputValue}/`;
       
 console.log(api); 
+//console.log(evapi); 
 let response = await axios.get(api); 
+//let responseEv = await axios.get(evapi); 
 console.log(response.data);
-  //
+//console.log(responseEv); 
 
 
 
