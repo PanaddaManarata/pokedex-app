@@ -97,7 +97,7 @@ function getWeight(){
   let thisWeight = response.data.weight; 
   console.log(thisWeight)
   
-  pokeWeight.innerHTML = "Weight: " + thisWeight; 
+  pokeWeight.innerHTML = "Weight: " + thisWeight/10 + " kg"; 
 
 
 }
